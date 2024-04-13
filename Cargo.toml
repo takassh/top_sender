@@ -15,6 +15,6 @@ tokio = { version = "1.37.0", features = [
 ] }
 clap = { version = "4.5.4", features = ["derive"] }
 futures-util = "0.3.30"
-tokio-tungstenite = "0.21.0"
+tokio-tungstenite = { versoin = "0.21.0", features = ["native-tls"] }
 url = "2.5.0"
 anyhow = "1.0.81"
