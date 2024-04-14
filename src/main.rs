@@ -28,7 +28,6 @@ async fn main() -> anyhow::Result<()> {
 
 async fn top(tx: Sender<String>) -> anyhow::Result<()> {
     let mut cmd = Command::new("top")
-        .args(["-s", "10"])
         .stdout(Stdio::piped())
         .spawn()
         .context("Failed to spawn command")?;
